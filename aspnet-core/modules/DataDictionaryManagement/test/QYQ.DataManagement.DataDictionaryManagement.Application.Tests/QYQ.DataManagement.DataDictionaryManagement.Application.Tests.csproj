@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="../../../../common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>QYQ.DataManagement.DataDictionaryManagement</RootNamespace>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\QYQ.DataManagement.DataDictionaryManagement.Application\QYQ.DataManagement.DataDictionaryManagement.Application.csproj" />
+    <ProjectReference Include="..\QYQ.DataManagement.DataDictionaryManagement.Domain.Tests\QYQ.DataManagement.DataDictionaryManagement.Domain.Tests.csproj" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="$(MicrosoftNETTestSdkVersion)"/>
+  </ItemGroup>
+
+</Project>

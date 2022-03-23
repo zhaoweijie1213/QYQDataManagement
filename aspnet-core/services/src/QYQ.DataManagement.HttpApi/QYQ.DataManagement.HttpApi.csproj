@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>QYQ.DataManagement</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\modules\DataDictionaryManagement\src\QYQ.DataManagement.DataDictionaryManagement.HttpApi\QYQ.DataManagement.DataDictionaryManagement.HttpApi.csproj" />
+    <ProjectReference Include="..\..\..\modules\FileManagement\src\QYQ.DataManagement.FileManagement.HttpApi\QYQ.DataManagement.FileManagement.HttpApi.csproj" />
+    <ProjectReference Include="..\..\..\modules\NotificationManagement\src\QYQ.DataManagement.NotificationManagement.HttpApi\QYQ.DataManagement.NotificationManagement.HttpApi.csproj" />
+    <ProjectReference Include="..\QYQ.DataManagement.Application.Contracts\QYQ.DataManagement.Application.Contracts.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="$(SwashbuckleVersion)" />
+    <PackageReference Include="Volo.Abp.Account.HttpApi" Version="$(AbpPackageVersion)" />
+    <PackageReference Include="Volo.Abp.Identity.HttpApi" Version="$(AbpPackageVersion)" />
+    <PackageReference Include="Volo.Abp.PermissionManagement.HttpApi" Version="$(AbpPackageVersion)" />
+    <PackageReference Include="Volo.Abp.TenantManagement.HttpApi" Version="$(AbpPackageVersion)" />
+    <PackageReference Include="Volo.Abp.FeatureManagement.HttpApi" Version="$(AbpPackageVersion)" />
+    <PackageReference Include="Volo.Abp.SettingManagement.HttpApi" Version="$(AbpPackageVersion)" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="../../../../common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>QYQ.DataManagement.DataDictionaryManagement</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.Ddd.Domain" Version="$(AbpPackageVersion)" />
+    <PackageReference Include="Volo.Abp.Caching" Version="$(AbpPackageVersion)" />
+   
+    <ProjectReference Include="..\QYQ.DataManagement.DataDictionaryManagement.Domain.Shared\QYQ.DataManagement.DataDictionaryManagement.Domain.Shared.csproj" />
+  </ItemGroup>
+
+</Project>

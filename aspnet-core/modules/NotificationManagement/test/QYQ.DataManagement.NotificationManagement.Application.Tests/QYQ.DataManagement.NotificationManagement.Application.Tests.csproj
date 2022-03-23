@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <Import Project="../../../../common.props"/>
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <RootNamespace>QYQ.DataManagement.NotificationManagement</RootNamespace>
+        <IsPackable>false</IsPackable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\..\src\QYQ.DataManagement.NotificationManagement.Application\QYQ.DataManagement.NotificationManagement.Application.csproj"/>
+        <ProjectReference Include="..\QYQ.DataManagement.NotificationManagement.Domain.Tests\QYQ.DataManagement.NotificationManagement.Domain.Tests.csproj"/>
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="$(MicrosoftNETTestSdkVersion)"/>
+    </ItemGroup>
+
+</Project>

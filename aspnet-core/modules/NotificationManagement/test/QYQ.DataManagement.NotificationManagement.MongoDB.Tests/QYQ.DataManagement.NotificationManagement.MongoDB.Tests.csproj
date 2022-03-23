@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+ <Import Project="../../../../common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>QYQ.DataManagement.NotificationManagement</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.9.1" />
+    <PackageReference Include="Mongo2Go" Version="3.1.1" />
+    <ProjectReference Include="..\..\src\QYQ.DataManagement.NotificationManagement.MongoDB\QYQ.DataManagement.NotificationManagement.MongoDB.csproj" />
+    <ProjectReference Include="..\QYQ.DataManagement.NotificationManagement.TestBase\QYQ.DataManagement.NotificationManagement.TestBase.csproj" />
+  </ItemGroup>
+
+</Project>

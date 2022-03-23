@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  
+  <Import Project="../../../../common.props" />
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>QYQ.DataManagement.DataDictionaryManagement</RootNamespace>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="$(MicrosoftNETTestSdkVersion)"/>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="$(MicrosoftVersion)"/>
+    <ProjectReference Include="..\..\src\QYQ.DataManagement.DataDictionaryManagement.EntityFrameworkCore\QYQ.DataManagement.DataDictionaryManagement.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="..\QYQ.DataManagement.DataDictionaryManagement.TestBase\QYQ.DataManagement.DataDictionaryManagement.TestBase.csproj" />
+    <PackageReference Include="Volo.Abp.EntityFrameworkCore.Sqlite" Version="$(AbpPackageVersion)" />
+  </ItemGroup>
+
+</Project>

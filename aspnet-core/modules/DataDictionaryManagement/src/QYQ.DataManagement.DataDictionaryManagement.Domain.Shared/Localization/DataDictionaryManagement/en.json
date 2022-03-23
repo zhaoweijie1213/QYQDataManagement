@@ -1,0 +1,11 @@
+{
+  "culture": "en",
+  "texts": {
+    "ManageYourProfile":  "Manage your profile",
+    "SamplePageMessage": "A sample page for the DataDictionaryManagement module",
+    "Permission:DataDictionaryManagement": "DataDictionaryManagement",
+    "Permission:Create": "Create",
+    "Permission:Update": "Update",
+    "Permission:Delete": "Delete"
+  }
+}

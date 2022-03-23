@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>QYQ.DataManagement</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\modules\DataDictionaryManagement\src\QYQ.DataManagement.DataDictionaryManagement.Domain\QYQ.DataManagement.DataDictionaryManagement.Domain.csproj" />
+    <ProjectReference Include="..\..\..\modules\FileManagement\src\QYQ.DataManagement.FileManagement.Domain\QYQ.DataManagement.FileManagement.Domain.csproj" />
+    <ProjectReference Include="..\..\..\modules\NotificationManagement\src\QYQ.DataManagement.NotificationManagement.Domain\QYQ.DataManagement.NotificationManagement.Domain.csproj" />
+    <ProjectReference Include="..\QYQ.DataManagement.Domain.Shared\QYQ.DataManagement.Domain.Shared.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.Emailing" Version="$(AbpPackageVersion)" />
+    <PackageReference Include="Volo.Abp.Identity.Domain" Version="$(AbpPackageVersion)" />
+    <PackageReference Include="Volo.Abp.PermissionManagement.Domain.Identity" Version="$(AbpPackageVersion)" />
+    <PackageReference Include="Volo.Abp.IdentityServer.Domain" Version="$(AbpPackageVersion)" />
+    <PackageReference Include="Volo.Abp.PermissionManagement.Domain.IdentityServer" Version="$(AbpPackageVersion)" />
+    <PackageReference Include="Volo.Abp.BackgroundJobs.Domain" Version="$(AbpPackageVersion)" />
+    <PackageReference Include="Volo.Abp.AuditLogging.Domain" Version="$(AbpPackageVersion)" />
+    <PackageReference Include="Volo.Abp.TenantManagement.Domain" Version="$(AbpPackageVersion)" />
+    <PackageReference Include="Volo.Abp.FeatureManagement.Domain" Version="$(AbpPackageVersion)" />
+    <PackageReference Include="Volo.Abp.SettingManagement.Domain" Version="$(AbpPackageVersion)" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <Import Project="../../../../common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>QYQ.DataManagement.NotificationManagement</RootNamespace>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="$(MicrosoftNETTestSdkVersion)"/>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="$(MicrosoftVersion)"/>
+    <ProjectReference Include="..\..\src\QYQ.DataManagement.NotificationManagement.EntityFrameworkCore\QYQ.DataManagement.NotificationManagement.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="..\QYQ.DataManagement.NotificationManagement.TestBase\QYQ.DataManagement.NotificationManagement.TestBase.csproj" />
+    <PackageReference Include="Volo.Abp.EntityFrameworkCore.Sqlite" Version="$(AbpPackageVersion)" />
+  </ItemGroup>
+
+</Project>

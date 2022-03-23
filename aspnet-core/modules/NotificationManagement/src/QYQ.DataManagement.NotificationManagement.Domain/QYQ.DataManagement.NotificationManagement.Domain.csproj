@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <Import Project="../../../../common.props" />
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <RootNamespace>QYQ.DataManagement.NotificationManagement</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Volo.Abp.Ddd.Domain" Version="$(AbpPackageVersion)" />
+     
+        <ProjectReference Include="..\QYQ.DataManagement.NotificationManagement.Domain.Shared\QYQ.DataManagement.NotificationManagement.Domain.Shared.csproj" />
+    </ItemGroup>
+
+</Project>

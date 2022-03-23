@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="../../../../common.props" />
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <RootNamespace>QYQ.DataManagement.FileManagement</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="$(MicrosoftNETTestSdkVersion)"/>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="$(MicrosoftVersion)"/>
+        <ProjectReference Include="..\..\src\QYQ.DataManagement.FileManagement.EntityFrameworkCore\QYQ.DataManagement.FileManagement.EntityFrameworkCore.csproj"/>
+        <ProjectReference Include="..\QYQ.DataManagement.FileManagement.TestBase\QYQ.DataManagement.FileManagement.TestBase.csproj"/>
+        <PackageReference Include="Volo.Abp.EntityFrameworkCore.Sqlite" Version="$(AbpPackageVersion)"/>
+    </ItemGroup>
+
+</Project>

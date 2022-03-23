@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="../../../../common.props" />
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <RootNamespace>QYQ.DataManagement.FileManagement</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Volo.Abp.AutoMapper" Version="$(AbpPackageVersion)" />
+        <PackageReference Include="Volo.Abp.Ddd.Application" Version="$(AbpPackageVersion)" />
+        <PackageReference Include="Volo.Abp.BlobStoring.Aliyun" Version="$(AbpPackageVersion)" />
+        <ProjectReference Include="..\QYQ.DataManagement.FileManagement.Application.Contracts\QYQ.DataManagement.FileManagement.Application.Contracts.csproj" />
+        <ProjectReference Include="..\QYQ.DataManagement.FileManagement.Domain\QYQ.DataManagement.FileManagement.Domain.csproj" />
+    </ItemGroup>
+
+</Project>
